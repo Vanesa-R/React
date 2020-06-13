@@ -1,12 +1,12 @@
 .App {
-  text-align: center;
+  box-sizing: border-box;
 }
 
 .Card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -28,17 +28,25 @@
   display: block;
   margin: 0 auto;
   border-radius: 5px 5px;
+  border: 1px solid cadetblue;
+}
+.Card__description {
+  min-height: 28vh;
 }
 .Card__author {
   font-size: 14px;
   color: #282c34;
-  margin-top: 50px;
+  margin-top: 20px;
+}
+.Card__tags {
+  margin: 0;
+  padding: 0;
 }
 .Card__tag {
   list-style-type: none;
   display: inline-block;
   padding: 3px 10px;
-  margin: 0 5px 0 0;
+  margin: 0 5px 5px 0;
   background-color: lavender;
   border: 1px solid cadetblue;
   border-radius: 5px 5px;

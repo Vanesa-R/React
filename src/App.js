@@ -3,10 +3,9 @@ import './App.css';
 import { generate as id } from "shortid";
 
 // Components
-import Card from "./components/Card"
+import Card from "./components/Card";
 
 function App() {
-
     const cards = [
         {
             author: "Vanesa",
@@ -37,22 +36,24 @@ function App() {
         },
     ]
     return (
-        <div className="Card">
-             {
-        cards.map(card => (
-          <Card
-            author={card.author}
-            date={card.date}
-            img={card.img}
-            key={card.id}
-            tags={card.tags}
-            title={card.title}
-          >
+        <>
+            <div className="Card">
+            {
+            cards.map(card => (
+            <Card
+                author={card.author}
+                date={card.date}
+                img={card.img}
+                key={card.id}
+                tags={card.tags}
+                title={card.title}
+            >
             {card.description}
-          </Card>
-        ))
-      }
-        </div>    
+            </Card>
+            ))
+            }
+        </div>            
+        </>
     )
 }
 
