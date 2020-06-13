@@ -24,16 +24,16 @@ function App() {
             id: id(),
             img: "/assets/Oviedo.jpg",
             tags: ["viajes", "oviedo"],
-            title: "Asturias"
+            title: "Visitando Asturias"
         },
         {
             author: "Vanesa",
             date: new Date().toLocaleDateString(),
             description: "Commodo aliqua velit adipisicing reprehenderit adipisicing nostrud duis magna excepteur fugiat duis. Excepteur velit quis occaecat ex dolor deserunt dolor in. Ea minim non id cupidatat laboris sunt. Sint cupidatat id tempor elit aliquip esse anim adipisicing.",
             id: id(),
-            img: "/assets/Caparra.jpg",
-            tags: ["viajes", "caparra"],
-            title: "Yacimiento romano de Cáparra"
+            img: "/assets/Templo_Mérida.jpg",
+            tags: ["viajes", "merida"],
+            title: "Viaje a Mérida"
         },
     ]
     return (

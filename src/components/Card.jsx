@@ -1,4 +1,5 @@
 import React from 'react';
+import { generate as id } from "shortid";
 
 const Card = ({ author, title, date, key, tags, img, children }) => (
   <div className="Cards">
@@ -6,10 +7,10 @@ const Card = ({ author, title, date, key, tags, img, children }) => (
     <img className="Card__img" src={img} alt={title}/>
     <p className="Card__description">{children}</p>
     <p className="Card__author">Publicado por {author} el {date}</p>
-    <ul className="Tags">
+    <ul>
       {
         tags.map(tag => {
-        return <li key={id()} className="Tag">{tag}</li>
+        return <li key={id()} className="Card__tag">{tag}</li>
         })
       }
     </ul>
